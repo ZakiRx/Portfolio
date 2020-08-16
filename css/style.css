@@ -1,0 +1,336 @@
+/*Global Style*/
+
+@font-face{
+    font-family: "Montesrrat";
+    src: url(../font/Montserrat-Bold.ttf);
+}
+.main-text-color{
+    color: #DF7F01 ;
+}
+.main-bg-color{
+    background-color: #DF7F01;
+}
+body{
+  background-color: #000000;
+  font-family: 'Montesrrat' ,'Ubuntu',Arial, Helvetica, sans-serif;
+  color: #fff;
+}
+a{
+    color: unset;
+}
+/*Custom Style FullPage.js*/
+#fp-nav ul li .fp-tooltip.fp-right{
+    font-family: ubuntu !important;
+    font-size: 18px !important;
+    font-weight: bold !important;
+    margin-top: -6px !important;
+}
+
+#fp-nav ul li a.active span, 
+#fp-nav ul li:hover a.active span, 
+.fp-slidesNav ul li a.active span, 
+.fp-slidesNav ul li:hover a.active span {
+    background: #FF9800;
+}
+
+#fp-nav ul li a span, 
+.fp-slidesNav ul li a span{
+    background: #fff ;
+}
+#fp-nav ul li, .fp-slidesNav ul li {
+    margin-bottom: 14px;
+}
+/*End Custom Style FullPage.js*/
+
+
+/*Start Home*/
+
+@media (min-width:992px){
+    .home .content{
+        margin-top: 200px;
+        margin-left: 83px;
+    }
+}
+
+@media (max-width:790px){
+    .home img{
+       display: none;
+    }
+}
+.home .content .title{
+    font-family: 'Ubuntu' , 'Montesrrat';
+    font-size:35px ;
+    font-weight: bold;
+}
+.home .content .excerpt{
+    font-family: 'Ubuntu';
+    color: #DEDEDE;
+    font-size: 13px;
+    line-height: 1.8;
+
+}
+.home .content .title .line{
+    position: relative;
+    width: 82px;
+    display: block;
+    height: 2px;
+    background-color: #DF7F01;
+    margin-top: 8px;
+}
+.home .contact{
+    bottom: 43px;
+}
+/*====End Home 
+             =========>*/
+
+ /*====Start About 
+             =========>*/
+.about .box{
+    background-color: #242424;
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+    padding: 50px 71px;
+}
+    
+.box .title{
+    font-size: 52px;
+    position: relative;
+    top: 41%;
+}
+
+.box .biography{
+    color: #e3e3e3;
+    font-weight: bold;
+    line-height: 1.9;
+    font-size: 19px;
+    text-align: justify;
+}
+
+
+ /*====End About 
+             =========>*/
+
+ /*====Start Works 
+             =========>*/
+.works .menu {
+    margin-bottom: 34px;
+ }
+.works .menu li{ 
+        font-family: 'Ubuntu';
+        position: relative;
+        display: inline;
+        padding: 10px 6px;
+        margin-right: 20px;
+        cursor: pointer;
+ }
+.works .menu li.active{
+   border-bottom: 1.5px solid  #DF7F01;
+    
+}
+.works .desc{
+    font-family: ubuntu;
+    font-size: 14px;
+}
+.works .box {
+    position: relative;
+    height: 220px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: background-position 3.5s ease-in-out ;
+    background-position: top center;
+    background-size: 100% auto!important;
+    background-repeat: no-repeat;
+}
+
+
+.works .box.projet1{
+    background-image: url(../img/projet1.png);
+
+}
+
+.works  .box.projet2{
+    background-image: url(../img/projet2.png);
+}
+.works  .box.projet3{
+    background-image: url(../img/projet3.png);
+}
+.works  .box.projet4{
+    background-image: url(../img/projet4.png);
+}
+.works .box:hover{
+    
+        background-position: bottom center!important;
+       
+    
+}
+
+.works .box .details {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    text-align: justify;
+    background-color: #323232db;
+    padding: 7px 12px;
+    transition: .5s all ease-in-out;
+  
+    color: #ebebeb;
+    font-family: 'Ubuntu';
+    font-weight: bold;
+    font-size: 14px;
+
+}
+.works .box .details p{
+    margin: 0;
+}
+
+ /*====Start Skills 
+             =========>*/
+ .skills .container
+{
+    max-width: 959px;
+}
+             
+ .skills .box{
+     background-color: #101010;
+     position: relative;
+     max-width: 100%;
+     margin: auto;
+     padding: 50px 71px;
+ }
+ .skills .box .row{
+    padding: 0 74px;
+ }
+ .skills .box .title{
+    position: absolute;
+    font-weight: bold;
+    top: 0;
+    font-family: ubuntu;
+    font-size: 50px;
+    left: -56px;
+    
+ }
+
+ @media(max-width:1024px){
+    .skills .box .title{
+        left: 15px;
+        position: relative;
+        text-align:center;
+    }
+ }
+
+ .skills .box img{
+     width: 93px;
+     height: 93px;
+    
+ }
+ .skills .box img.html{
+    filter: drop-shadow(0px 5px 26px #FF5722);
+    
+ }
+ .skills .box img.css{
+    filter: drop-shadow(0px 5px 26px #2062AF);
+
+ }
+ .skills .box img.js{
+    filter: drop-shadow(0px 5px 26px #FFEB3B);
+    width: 70px;
+
+ }
+  .skills .box img.php{
+    filter: drop-shadow(0px 5px 26px #8993BE);
+
+    padding-top: 20px;
+    width: 104px;
+ }
+ .skills .box img.net{
+     margin-top: 10px;
+    filter: drop-shadow(0px 5px 26px #3F0CA0);
+
+ }
+ .skills .box img.java{
+    filter: drop-shadow(0px 5px 26px #34607D);
+
+ }
+
+/*====== Start Contact
+                      ========>*/
+/*.contact{
+
+    margin-top: 200px;
+}*/
+.contact textarea{
+    resize: none;
+    width: 85%;
+    height: 185px;
+}
+.contact input:focus ,.contact textarea:focus{
+    outline: none;
+}
+.contact .custom-field{
+    display: block;
+    padding: 6px 17px;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #DF7F01;
+    color: #fff;
+    font-size: 14px;
+
+}
+.contact .custom-field::placeholder{
+    font-size:12px
+}
+.contact .custom-btn{
+    padding: 5px 35px;
+    background: #000;
+    color: #DF7F01;
+    border: 1px solid #DF7F01;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 1s ease-in-out;
+}
+.contact .custom-btn:hover{
+    color: #fff;
+    border-color:  #DF7F01;
+    background-color: #DF7F01;;
+}
+.contact .info{
+    border-left: 1px solid #fff;
+    padding-left: 19px;
+}
+.contact .info p{
+    font-family: ubuntu;
+    font-weight: 400;
+    word-spacing: 5.2px;
+    letter-spacing: 2px;
+}
+.contact .fab{
+    font-size: 25px;
+    margin: 9px 20px;
+
+}
+.contact .fa-linkedin{
+    color:#006699;
+}
+.contact span{
+    
+    font-family: ubuntu;
+    font-size: 15px;
+    padding: 15px;
+    position: relative;
+    top: 11px;
+}
+.contact p.line{
+    display: inline-block;
+    width: 26px;
+    height: .5px;
+    background: #fff;
+    position: absolute;
+    top: 25px;
+    left: 0;
+
+
+}
+
+/*====== End Contact
+                      ========>*/
