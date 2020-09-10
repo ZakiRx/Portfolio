@@ -161,6 +161,9 @@ a{
 .works  .box.projet5{
     background-image: url(../img/projet5.png);
 }
+.works  .box.projet6{
+    background-image: url(../img/projet6.png);
+}
 .works .box:hover{
     
         background-position: bottom center!important;
